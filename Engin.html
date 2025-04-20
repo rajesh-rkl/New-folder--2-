@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spare House</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #535252;
+        }
+
+        header {
+            background: #c53131;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+    <header>
+        <h1>🚴‍♂️ Spare House Store</h1>
+        <nav>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Helmet">
+                <h2>Bike Helmet</h2>
+                <p>$45.00</p>
+                <button onclick="buyNow('Bike Helmet')">Buy Now</button>
+            </div>
+
+
+
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Bike Lock">
+                <h2>Bike Lock</h2>
+                <p>$25.00</p>
+                <button onclick="buyNow('Bike Lock')">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="LED Lights">
+                <h2>LED Lights</h2>
+                <p>$15.00</p>
+                <button onclick="buyNow('LED Lights')">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bike Accessories. All rights reserved.</p>
+    </footer>
+
+    <script>function buyNow(itemName) {
+            alert(`You have selected to buy: ${itemName}`);
+        }
+    </script>
+</body>
+
+</html>

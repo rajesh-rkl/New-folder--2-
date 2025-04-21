@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +14,19 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         /* Header Styles */
         header {
             background-color: #fff;
@@ -34,47 +35,47 @@
             top: 0;
             z-index: 100;
         }
-        
+
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-        
+
         .logo {
             font-size: 28px;
             font-weight: bold;
             color: #e30613;
         }
-        
+
         .logo span {
             color: #333;
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
             margin-left: 25px;
         }
-        
+
         nav ul li a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         nav ul li a:hover {
             color: #e30613;
         }
-        
+
         /* Hero Section */
         .brand-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1580310617871-67c8a1b10c52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(254, 0, 0, 0.7), rgba(205, 52, 52, 0.7)), url('https://images.unsplash.com/photo-1580310617871-67c8a1b10c52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -82,46 +83,46 @@
             padding: 100px 20px;
             margin-bottom: 50px;
         }
-        
+
         .brand-hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
         }
-        
+
         .brand-hero p {
             font-size: 20px;
             max-width: 800px;
             margin: 0 auto 30px;
         }
-        
+
         /* Brand Showcase */
         .brand-section {
             padding: 50px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .section-title h2 {
             font-size: 36px;
             color: #333;
             margin-bottom: 15px;
         }
-        
+
         .section-title p {
             color: #666;
             max-width: 700px;
             margin: 0 auto;
         }
-        
+
         .brands-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 30px;
         }
-        
+
         .brand-card {
             background-color: white;
             border-radius: 10px;
@@ -130,12 +131,12 @@
             transition: all 0.3s;
             text-align: center;
         }
-        
+
         .brand-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
-        
+
         .brand-logo {
             height: 150px;
             display: flex;
@@ -144,28 +145,28 @@
             padding: 20px;
             background-color: #f9f9f9;
         }
-        
+
         .brand-logo img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
-        
+
         .brand-info {
             padding: 20px;
         }
-        
+
         .brand-info h3 {
             margin-bottom: 10px;
             font-size: 22px;
         }
-        
+
         .brand-info p {
             color: #666;
             margin-bottom: 15px;
             font-size: 14px;
         }
-        
+
         .brand-models {
             display: flex;
             justify-content: center;
@@ -173,14 +174,14 @@
             gap: 8px;
             margin-bottom: 15px;
         }
-        
+
         .model-tag {
             background-color: #f0f0f0;
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 12px;
         }
-        
+
         .view-btn {
             display: inline-block;
             padding: 8px 20px;
@@ -191,17 +192,17 @@
             transition: all 0.3s;
             text-decoration: none;
         }
-        
+
         .view-btn:hover {
             background-color: #e30613;
         }
-        
+
         /* Featured Models */
         .models-section {
             background-color: #f1f1f1;
             padding: 70px 0;
         }
-        
+
         .models-slider {
             display: flex;
             overflow-x: auto;
@@ -209,7 +210,7 @@
             padding: 20px 0;
             scroll-snap-type: x mandatory;
         }
-        
+
         .model-card {
             min-width: 300px;
             background-color: white;
@@ -218,48 +219,48 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             scroll-snap-align: start;
         }
-        
+
         .model-image {
             height: 200px;
             background-color: #ddd;
             background-size: cover;
             background-position: center;
         }
-        
+
         .model-details {
             padding: 20px;
         }
-        
+
         .model-details h3 {
             margin-bottom: 10px;
             font-size: 20px;
         }
-        
+
         .model-specs {
             display: flex;
             justify-content: space-between;
             margin-bottom: 15px;
         }
-        
+
         .spec-item {
             text-align: center;
         }
-        
+
         .spec-item .value {
             font-weight: bold;
             color: #e30613;
         }
-        
+
         .spec-item .label {
             font-size: 12px;
             color: #666;
         }
-        
+
         /* Brand Comparison */
         .comparison-section {
             padding: 70px 0;
         }
-        
+
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
@@ -267,63 +268,64 @@
             background-color: white;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
-        .comparison-table th, .comparison-table td {
+
+        .comparison-table th,
+        .comparison-table td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #eee;
         }
-        
+
         .comparison-table th {
             background-color: #333;
             color: white;
             font-weight: 500;
         }
-        
+
         .comparison-table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        
+
         .highlight {
             color: #e30613;
             font-weight: bold;
         }
-        
+
         /* Footer */
         footer {
             background-color: #222;
             color: #ddd;
             padding: 50px 0 20px;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         .footer-column h3 {
             color: white;
             margin-bottom: 20px;
             font-size: 18px;
         }
-        
+
         .footer-column ul li {
             margin-bottom: 10px;
         }
-        
+
         .footer-column ul li:hover {
             color: #e30613;
             cursor: pointer;
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-        
+
         .social-links a {
             display: flex;
             align-items: center;
@@ -334,12 +336,12 @@
             border-radius: 50%;
             transition: all 0.3s;
         }
-        
+
         .social-links a:hover {
             background-color: #e30613;
             transform: translateY(-3px);
         }
-        
+
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
@@ -347,79 +349,81 @@
             font-size: 14px;
             color: #999;
         }
-        
+
         /* Responsive Design */
         @media (max-width: 992px) {
             .brands-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-            
+
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
             }
-            
+
             nav ul {
                 margin-top: 20px;
             }
-            
+
             .brands-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .brand-hero h1 {
                 font-size: 36px;
             }
-            
+
             .brand-hero p {
                 font-size: 18px;
             }
         }
-        
+
         @media (max-width: 576px) {
             .brands-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
             }
-            
+
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            
+
             nav ul li {
                 margin: 5px 10px;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">Spare<span>House</span></div>
-                
+
             </div>
         </div>
     </header>
-    
+
     <!-- Hero Section -->
     <section class="brand-hero">
         <div class="container">
             <h1>World's Leading Bike Brands</h1>
-            <p>Explore the most prestigious motorcycle manufacturers from around the globe. Discover their heritage, technology, and flagship models.</p>
+            <p>Explore the most prestigious motorcycle manufacturers from around the globe. Discover their heritage,
+                technology, and flagship models.</p>
         </div>
     </section>
-    
+
     <!-- Brand Showcase -->
     <section class="brand-section">
         <div class="container">
@@ -427,12 +431,13 @@
                 <h2>Premium Bike Brands</h2>
                 <p>Browse through the most renowned motorcycle manufacturers in the world</p>
             </div>
-            
+
             <div class="brands-grid">
                 <!-- Brand Card 1 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Honda_logo.svg/2560px-Honda_logo.svg.png" alt="Honda">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Honda_logo.svg/2560px-Honda_logo.svg.png"
+                            alt="Honda">
                     </div>
                     <div class="brand-info">
                         <h3>Honda</h3>
@@ -445,11 +450,12 @@
                         <a href="#" class="view-btn" data-brand="honda">View Models</a>
                     </div>
                 </div>
-                
+
                 <!-- Brand Card 2 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Yamaha_Logo.svg/1200px-Yamaha_Logo.svg.png" alt="Yamaha">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Yamaha_Logo.svg/1200px-Yamaha_Logo.svg.png"
+                            alt="Yamaha">
                     </div>
                     <div class="brand-info">
                         <h3>Yamaha</h3>
@@ -462,11 +468,12 @@
                         <a href="#" class="view-btn" data-brand="yamaha">View Models</a>
                     </div>
                 </div>
-                
+
                 <!-- Brand Card 3 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Suzuki_logo_2.svg/2560px-Suzuki_logo_2.svg.png" alt="Suzuki">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Suzuki_logo_2.svg/2560px-Suzuki_logo_2.svg.png"
+                            alt="Suzuki">
                     </div>
                     <div class="brand-info">
                         <h3>Suzuki</h3>
@@ -479,11 +486,12 @@
                         <a href="#" class="view-btn" data-brand="suzuki">View Models</a>
                     </div>
                 </div>
-                
+
                 <!-- Brand Card 4 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kawasaki_logo.svg/2560px-Kawasaki_logo.svg.png" alt="Kawasaki">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kawasaki_logo.svg/2560px-Kawasaki_logo.svg.png"
+                            alt="Kawasaki">
                     </div>
                     <div class="brand-info">
                         <h3>Kawasaki</h3>
@@ -496,11 +504,12 @@
                         <a href="#" class="view-btn" data-brand="kawasaki">View Models</a>
                     </div>
                 </div>
-                
+
                 <!-- Brand Card 5 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Royal_Enfield_logo.svg/1200px-Royal_Enfield_logo.svg.png" alt="Royal Enfield">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Royal_Enfield_logo.svg/1200px-Royal_Enfield_logo.svg.png"
+                            alt="Royal Enfield">
                     </div>
                     <div class="brand-info">
                         <h3>Royal Enfield</h3>
@@ -513,11 +522,12 @@
                         <a href="#" class="view-btn" data-brand="royal-enfield">View Models</a>
                     </div>
                 </div>
-                
+
                 <!-- Brand Card 6 -->
                 <div class="brand-card">
                     <div class="brand-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ducati_logo.svg/2560px-Ducati_logo.svg.png" alt="Ducati">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ducati_logo.svg/2560px-Ducati_logo.svg.png"
+                            alt="Ducati">
                     </div>
                     <div class="brand-info">
                         <h3>Ducati</h3>
@@ -533,7 +543,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Featured Models Section -->
     <section class="models-section">
         <div class="container">
@@ -541,11 +551,13 @@
                 <h2>Featured Models</h2>
                 <p>Check out some of the most popular bikes from these brands</p>
             </div>
-            
+
             <div class="models-slider">
                 <!-- Model 1 -->
                 <div class="model-card">
-                    <div class="model-image" style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="model-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    </div>
                     <div class="model-details">
                         <h3>Honda CBR1000RR-R Fireblade</h3>
                         <div class="model-specs">
@@ -565,10 +577,12 @@
                         <a href="#" class="view-btn">View Details</a>
                     </div>
                 </div>
-                
+
                 <!-- Model 2 -->
                 <div class="model-card">
-                    <div class="model-image" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="model-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    </div>
                     <div class="model-details">
                         <h3>Yamaha YZF-R1</h3>
                         <div class="model-specs">
@@ -588,10 +602,12 @@
                         <a href="#" class="view-btn">View Details</a>
                     </div>
                 </div>
-                
+
                 <!-- Model 3 -->
                 <div class="model-card">
-                    <div class="model-image" style="background-image: url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="model-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    </div>
                     <div class="model-details">
                         <h3>Kawasaki Ninja H2</h3>
                         <div class="model-specs">
@@ -611,10 +627,12 @@
                         <a href="#" class="view-btn">View Details</a>
                     </div>
                 </div>
-                
+
                 <!-- Model 4 -->
                 <div class="model-card">
-                    <div class="model-image" style="background-image: url('https://images.unsplash.com/photo-1580310617871-67c8a1b10c52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="model-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1580310617871-67c8a1b10c52?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    </div>
                     <div class="model-details">
                         <h3>Ducati Panigale V4</h3>
                         <div class="model-specs">
@@ -637,7 +655,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Brand Comparison Section -->
     <section class="comparison-section">
         <div class="container">
@@ -645,7 +663,7 @@
                 <h2>Brand Comparison</h2>
                 <p>See how the top brands stack up against each other</p>
             </div>
-            
+
             <table class="comparison-table">
                 <thead>
                     <tr>
@@ -710,7 +728,7 @@
             </table>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -724,7 +742,7 @@
                         <li>Privacy Policy</li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
@@ -734,7 +752,7 @@
                         <li>Motorcycle News</li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Connect With Us</h3>
                     <ul>
@@ -750,45 +768,45 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2023 BikeShowcase. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Brand card hover effect
             const brandCards = document.querySelectorAll('.brand-card');
             brandCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
+                card.addEventListener('mouseenter', function () {
                     this.style.transform = 'translateY(-10px)';
                     this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
                 });
-                
-                card.addEventListener('mouseleave', function() {
+
+                card.addEventListener('mouseleave', function () {
                     this.style.transform = 'translateY(0)';
                     this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
                 });
             });
-            
+
             // View models button functionality
             const viewButtons = document.querySelectorAll('.view-btn');
             viewButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
+                button.addEventListener('click', function (e) {
                     e.preventDefault();
                     const brand = this.getAttribute('data-brand');
                     alert(`Showing models for ${brand.charAt(0).toUpperCase() + brand.slice(1).replace('-', ' ')}`);
                     // In a real app, you would filter models or redirect to brand page
                 });
             });
-            
+
             // Auto-scroll for models slider
             const slider = document.querySelector('.models-slider');
             let scrollAmount = 0;
             const scrollSpeed = 1;
-            
+
             function autoScroll() {
                 scrollAmount += scrollSpeed;
                 if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
@@ -797,21 +815,22 @@
                 slider.scrollLeft = scrollAmount;
                 requestAnimationFrame(autoScroll);
             }
-            
+
             // Start auto-scroll after 3 seconds
             setTimeout(() => {
                 autoScroll();
             }, 3000);
-            
+
             // Pause auto-scroll on hover
-            slider.addEventListener('mouseenter', function() {
+            slider.addEventListener('mouseenter', function () {
                 scrollSpeed = 0;
             });
-            
-            slider.addEventListener('mouseleave', function() {
+
+            slider.addEventListener('mouseleave', function () {
                 scrollSpeed = 1;
             });
         });
     </script>
 </body>
+
 </html>

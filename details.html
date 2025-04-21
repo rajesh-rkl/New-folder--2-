@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Detail Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .bike-detail-container {
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bike-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .bike-image {
+            flex: 1;
+        }
+
+        .bike-info {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .bike-info h1 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .specs {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .specs li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+
+    <div class="bike-detail-container">
+        <div class="bike-image">
+            <img src="https://via.placeholder.com/500x300?text=Bike+Image" alt="Bike Image" />
+        </div>
+        <div class="bike-info">
+            <h1 id="bike-name">Yamaha R15 V4</h1>
+            <p class="price">$2,500</p>
+            <p class="description">
+                A lightweight supersport bike with aggressive styling, advanced features, and great fuel economy.
+            </p>
+
+            <ul class="specs">
+                <li><strong>Engine:</strong> 155cc</li>
+                <li><strong>Max Power:</strong> 18.4 PS</li>
+                <li><strong>Weight:</strong> 142 kg</li>
+                <li><strong>Top Speed:</strong> 136 km/h</li>
+            </ul>
+
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>function addToCart() {
+            alert("Bike added to cart!");
+        }
+    </script>
+</body>
+
+</html>

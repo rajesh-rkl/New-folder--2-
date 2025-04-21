@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Services</title>
+    <link rel="stylesheet" href="bike-services.css" />
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f0f0;
+            color: #222;
+        }
+
+        header {
+            background-color: #d32e2e;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 280px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h2 {
+            margin-top: 0;
+            color: #2f3640;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2f3640;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+
+    <header>
+        <h1>🏍️ Our Bike Services</h1>
+        <p>Top-notch care and customization for your bike</p>
+    </header>
+
+    <section class="services-container">
+        <div class="service-card" onclick="showService('Bike Repair')">
+            <h2>🔧 Bike Repair</h2>
+            <p>From brake issues to engine fixes, we’ve got you covered.</p>
+        </div>
+
+        <div class="service-card" onclick="showService('Bike Servicing')">
+            <h2>🛠️ General Servicing</h2>
+            <p>Keep your ride smooth with regular maintenance.</p>
+        </div>
+
+        <div class="service-card" onclick="showService('Bike Washing')">
+            <h2>🚿 Bike Washing</h2>
+            <p>Professional cleaning to keep your bike shining.</p>
+        </div>
+
+        <div class="service-card" onclick="showService('Custom Modifications')">
+            <h2>⚙️ Custom Modifications</h2>
+            <p>Upgrade your bike with premium parts and style.</p>
+        </div>
+
+        <div class="service-card" onclick="showService('Insurance Assistance')">
+            <h2>📝 Insurance Assistance</h2>
+            <p>Get help with bike insurance and claim process.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BikeZone Services. All rights reserved.</p>
+    </footer>
+
+    <script>function showService(serviceName) {
+            alert("You selected: " + serviceName + " service.");
+        }
+    </script>
+</body>
+
+</html>
